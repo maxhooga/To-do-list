@@ -6,9 +6,9 @@ const ToDo = ({todo, handleToggle}) => {
         handleToggle(event.currentTarget.id)
     }
 
-    
     return (
         <div className={todo.complete ? "todo strike" : "todo"} onClick={handleClick} id={todo.id}>
+            {todo.id}. 
             {todo.task}
         </div>
     );
